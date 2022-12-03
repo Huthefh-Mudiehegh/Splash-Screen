@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Splash Screen</string>
+    <string name="splash_appContent">استأجر كتابك</string>
+    <string name="splash_appName">تشيب</string>
+</resources>

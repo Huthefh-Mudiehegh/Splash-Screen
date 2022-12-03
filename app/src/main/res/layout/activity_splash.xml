@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/splash_appLogoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003"
+        app:srcCompat="@drawable/ic_app" />
+
+    <TextView
+        android:id="@+id/splash_appNameTV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="-22dp"
+        android:fontFamily="sans-serif-medium"
+
+        android:gravity="center|top"
+        android:letterSpacing="0.06"
+        android:text="@string/splash_appName"
+        android:textColor="#A6000000"
+        android:textSize="64sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_appLogoImageView" />
+
+    <TextView
+        android:id="@+id/splash_appContentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+
+        android:text="@string/splash_appContent"
+        android:textSize="22sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/splash_appNameTV"
+        app:layout_constraintStart_toStartOf="@+id/splash_appNameTV"
+        app:layout_constraintTop_toBottomOf="@+id/splash_appNameTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
